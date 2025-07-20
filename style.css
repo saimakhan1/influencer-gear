@@ -94,6 +94,9 @@ button {
 }
 
 /*featured-products*/
+.featured-products2 {
+  display: none;
+}
 
 .featured-products {
   display: flex;
@@ -125,6 +128,8 @@ footer .social-media i {
 
 /**************Responsive Design**********************/
 @media screen and (max-width: 576px) {
+}
+@media screen and (max-width: 992px) {
   .header1 {
     display: none;
   }
@@ -152,11 +157,19 @@ footer .social-media i {
     gap: 10px;
   }
   .featured-products {
-    display: flex;
-    flex-direction: column;
+    display: none;
+  }
+  .featured-products2 {
+    display: block;
     text-align: center;
     justify-content: center;
-    margin: 100px 0;
+  }
+  .featured-products2 .featured-description {
+    margin: 10px auto;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
   }
 }
 @media screen and(max-width:768px) {
