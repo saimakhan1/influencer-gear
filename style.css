@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.white {
+  background-color: white;
+  padding: 87px 120px;
+}
+
+/*banner design*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+}
+
+header ul li {
+  list-style: none;
+}
+header ul li a {
+  text-decoration: none;
+  color: #3a3a3a;
+  padding: 10px;
+  display: inline-block;
+}
+
+button {
+  border: none;
+}
+/*************banner mid******************/
+.banner-mid {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.banner-pic .start-journey {
+  width: 582px;
+  height: 270px;
+}
+.start-journey h1 {
+  font-family: "Poppins", sans-serif;
+}
+.banner-mid .camera-pic {
+  width: 440px;
+  height: 414px;
+}
+.btn-primary {
+  background-color: #e02c6d;
+  color: white;
+  padding: 15px;
+  border-radius: 25px;
+  margin-top: 15px;
+}
+/*****shop********/
+.shop {
+  display: flex;
+  justify-content: space-around;
+  margin: 69px 165px;
+}
+
+/**********popular collections section****************/
+.popular-collection > h1 {
+  text-align: center;
+}
+.pop-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+}
+.card {
+  padding: 14px;
+  /*   box-shadow: 5px 5px 5px gray; */
+  box-shadow: 0 0 10px gray;
+}
+.card-body,
+.card-img {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*featured-products*/
+
+.featured-products {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  margin: 100px 0;
+}
+
+.featured-description {
+  text-align: left;
+}
+footer {
+  background-color: black;
+  color: white;
+
+  text-align: center;
+  padding: 50px 0;
+}
+
+footer .social-media {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+footer .social-media i {
+  margin: 20px;
+  font-size: 30px;
+}
