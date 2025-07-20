@@ -11,20 +11,23 @@
 
 /*banner design*/
 
-header {
+.header1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.header2 {
+  display: none;
+}
 
-header ul {
+.header1 ul {
   display: flex;
 }
 
-header ul li {
+.header1 ul li {
   list-style: none;
 }
-header ul li a {
+.header1 ul li a {
   text-decoration: none;
   color: #3a3a3a;
   padding: 10px;
@@ -35,6 +38,9 @@ button {
   border: none;
 }
 /*************banner mid******************/
+.banner-mid2 {
+  display: none;
+}
 .banner-mid {
   display: flex;
   align-items: center;
@@ -115,4 +121,45 @@ footer .social-media {
 footer .social-media i {
   margin: 20px;
   font-size: 30px;
+}
+
+/**************Responsive Design**********************/
+@media screen and (max-width: 576px) {
+  .header1 {
+    display: none;
+  }
+  .header2 {
+    display: flex;
+    justify-content: space-around;
+  }
+  .banner-mid {
+    display: none;
+  }
+  .banner-mid2 {
+    display: block;
+    text-align: center;
+    justify-content: center;
+  }
+  .shop {
+    display: grid;
+    grid-template-rows: 2;
+    gap: 5px;
+    margin: 50px;
+  }
+  .pop-box {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .featured-products {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 100px 0;
+  }
+}
+@media screen and(max-width:768px) {
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
 }
